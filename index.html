@@ -1,1 +1,394 @@
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ace Efrem - Portfolio</title>
+
+    <!-- connects CSS file (styling) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- font -->
+    <style>
+        body {
+            font-family: Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- =========================================================
+                        TOP HEADER 
+========================================================= -->
+<header class="site-header">
+
+    <!-- SITE NAME-->
+    <div class="site-name">
+        <a href="#">Ace Efrem</a>
+    </div>
+
+    <!-- NAVIGATION (buttons jump to sections lower on page) -->
+    <nav class="site-navigation">
+        <ul>
+
+            <li class="grow-element"><a href="#about">About Me</a></li>
+            <li class="grow-element"><a href="#experience">Work Experience</a></li>
+            <li class="grow-element"><a href="#education">Education</a></li>
+            <li class="grow-element"><a href="#extracurriculars">Extracurriculars</a></li>
+            <li class="grow-element"><a href="#projects">Projects</a></li>
+            <li class="grow-element"><a href="#contact">Contact Me</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- MUSIC CONTROLS (fake MySpace profile music system idk this was heavy my space and joel gc inspired)-->
+    <div class="music-controls">
+        <button onclick="playMusic()" class="music-btn">▶</button>
+        <a href="https://www.youtube.com/watch?v=vGxHVf6RTVY" target="_blank" class="music-btn">🔗</a>
+        <button onclick="pauseMusic()" class="music-btn">⏸</button>
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+  MAIN WRAPPER (holds EVERYTHING on the site)
+========================================================= -->
+<div class="site">
+
+
+<!-- =========================================================
+  ABOUT SECTION (profile home page)
+========================================================= -->
+<div class="about-me-page" id="about">
+
+    <!-- LEFT SIDE (PROFILE CARD) like MySpace top-left box -->
+    <div class="profile-card">
+
+        <h1>About Me</h1>
+
+        <div class="page-spacer"></div>        <!-- spacer-->
+
+        <!-- role-text changes automatically (using JS) -->
+        <p>Aspiring <span id="role-text">I.T. Specialist</span></p>
+
+        <div class="page-spacer"></div>
+
+        <!-- profile pic -->
+        <img src="profilepic.png"
+             alt="Hello! This is me!"
+             width="325"
+             height="400"
+             style="border-radius: 16px;">
+
+    </div>
+
+
+    <!-- RIGHT SIDE (CERTIFICATIONS GRID ACHIEVEMENTS WALL)-->
+    <div class="certifications-achievements-card">
+
+        <!-- grid system -->
+        <div class="cert-grid">
+
+            <!-- each cert-card = one achievement tile -->
+            <div class="grow-element">
+                <div class="cert-card">
+                    <h4>CERTIFICATION</h4>
+                    <h3>OSHA Certified</h3>
+                    <p>Arlington Career Centre<br>2025–2026</p>
+                </div>
+            </div>
+
+            <div class="grow-element">
+                <div class="cert-card">
+                    <h4>CERTIFICATION</h4>
+                    <h3>CPR Trained</h3>
+                    <p>Washington Liberty HS<br>2024–2025</p>
+                </div>
+            </div>
+
+            <div class="grow-element">
+                <div class="cert-card">
+                    <h4>CERTIFICATION</h4>
+                    <h3>Python Certification</h3>
+                    <p>Washington Liberty HS<br>2024–2025</p>
+                </div>
+            </div>
+
+            <!-- fun decorative cards (these are just vibe pieces) -->
+            <div class="grow-element">
+                <div class="weird-card">
+                    <h3>( ˘▽˘)っ</h3>
+                    <p>cute chaos section</p>
+                </div>
+            </div>
+
+            <div class="grow-element">
+                <div class="cert-card">
+                    <h4>ACHIEVEMENT</h4>
+                    <h3>Straight A’s</h3>
+                    <p>2023–2024</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- BOTTOM BIO SECTION (this stretches across the page)
+         think of it like your “about paragraph wall” -->
+    <div class="about-bio-card">
+
+        <center>
+
+        <p>
+            Hello! I am someone who likes to see how things work inside and out,
+            especially in technology. This site is basically my digital identity.
+        </p>
+
+        </center>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+  WORK EXPERIENCE SECTION
+========================================================= -->
+<div class="work-experience-page" id="experience">
+
+    <center>
+        <h1>Work Experience</h1>
+        <p>Hands-on IT experience from shadowing professionals</p>
+    </center>
+
+    <!-- layout = left column (jobs) + right column (skills toolbox) -->
+    <div class="experience-layout">
+
+        <!-- LEFT COLUMN (jobs list) -->
+        <div class="experience-column">
+
+            <!-- JOB CARD 1 -->
+            <div class="grow-element">
+                <div class="experience-card">
+
+                    <!-- image + text side by side -->
+                    <div class="experience-row reverse">
+
+                        <img class="job-image"
+                             src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHrfGuc3rjFXLOzbYHTxvwANOjrqScXpKCtQ3T4yIFuxZBg8pDXv8X3acD-rZT49anO9eAlP3VvMkEzqGQzCDbPu-r8zEJsvQJyUxveW0JRK5LFFDLlKY24M4gsBQD1Uc8omsILxQ=w408-h306-k-no">
+
+                        <div class="job-text">
+                            <h3>AAAE</h3>
+                            <p>Help desk + computer troubleshooting</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- JOB CARD 2 -->
+            <div class="grow-element">
+                <div class="experience-card">
+
+                    <div class="experience-row">
+
+                        <img class="job-image"
+                             src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFZkC1lmRBHVRMsSaJelCBDUh91mFRVYvau74V-RbAzczZGinzngiwYWvhH-EdlW3BI4nZXiBV00uhCdd0HuIeSFamgOf4FXmVTMyQLT-8kl6HrzZD5tiv9jOdaDaGSUvs3wBaJRw=w408-h306-k-no">
+
+                        <div class="job-text">
+                            <h3>MOSAIC</h3>
+                            <p>IT systems + hardware exposure</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT COLUMN (SKILLS STATS PANEL)-->
+        <div class="toolbox-card">
+
+            <h3>Skillsets</h3>
+
+            <!-- skill bars -->
+            <div class="skill">
+                <p>Programming</p>
+                <div class="skill-bar">
+                    <div class="skill-fill skill-4"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Hardware Repair</p>
+                <div class="skill-bar">
+                    <div class="skill-fill skill-5"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- =========================================================
+  EDUCATION SECTION
+========================================================= -->
+<div class="academics-page" id="education">
+
+    <center>
+        <h1>Education</h1>
+        <p>Where I learned the technical foundations</p>
+    </center>
+
+    <div class="academics-card">
+        <h3>Arlington Career Centre</h3>
+        <p>Electrical + systems training</p>
+    </div>
+
+    <div class="academics-card">
+        <h3>Washington Liberty</h3>
+        <p>Programming + computer science</p>
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+  EXTRACURRICULARS (clubs / social systems)
+========================================================= -->
+<div class="extracurriculars-page" id="extracurriculars">
+
+    <center>
+        <h1>Extracurriculars</h1>
+        <p>Activities outside class that shaped my skills</p>
+    </center>
+
+    <div class="extracurriculars-card">
+        <p>Dungeons & Dragons Club</p>
+    </div>
+
+    <div class="extracurriculars-card">
+        <p>LGBTQ+ Pride Club</p>
+    </div>
+
+    <div class="extracurriculars-card">
+        <p>Rifle Team</p>
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+  PROJECTS SECTION
+========================================================= -->
+<div class="projects-page" id="projects">
+
+    <center>
+        <h1>Projects</h1>
+        <p>Things I built outside school</p>
+    </center>
+
+    <div class="projects-grid">
+
+        <div class="projects-card">
+            <h3>Python Ticket System</h3>
+        </div>
+
+        <div class="projects-card">
+            <h3>VBS Script Project</h3>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+  CONTACT FOOTER
+========================================================= -->
+<footer class="site-footer" id="contact">
+
+    <h3>Contact Info</h3>
+
+    <p>Email | Phone | School</p>
+
+</footer>
+
+
+<!-- =========================================================
+  FUN STUFF FROM HERE ON OUT GUYS YEEE HAWWWWW
+========================================================= -->
+
+<!-- ========== music player ========== -->
+<div id="music-player" style="display:none;"></div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<script>
+
+let player;
+let isReady = false;
+
+/* creates hidden music player */
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('music-player', {
+        height: '0',
+        width: '0',
+        videoId: 'vGxHVf6RTVY',
+        playerVars: { autoplay: 1 },
+        events: {
+            onReady: () => isReady = true
+        }
+    });
+}
+
+/* plays music */
+function playMusic() {
+    if (isReady) player.playVideo();
+}
+
+/* pauses music */
+function pauseMusic() {
+    if (isReady) player.pauseVideo();
+}
+
+</script>
+
+
+<!-- ========== potential job title rotator ========== -->
+
+<script>
+
+const roles = [
+    "I.T. Specialist",
+    "Software Developer",
+    "Network Engineer",
+    "Computer Technician"
+];
+
+let index = 0;
+
+/* updates the text inside About Me */
+setInterval(() => {
+    document.getElementById("role-text").textContent = roles[index];
+
+    index++;
+          /* lowkey, I'm running off of hopes, dreams, and two 5-hours, doing ts at 2 in the morning. I'm not gonna remember ts when school starts again */
+    if (index >= roles.length) {
+        index = 0;
+    }
+
+}, 2000);
+
+</script>
+
+</body>
+</html>
