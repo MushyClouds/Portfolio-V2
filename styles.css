@@ -1,0 +1,363 @@
+
+/* =========================================================
+   BASE PAGE STUFF
+========================================================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background */
+    background: radial-gradient(circle at top, #0b0f14, #05070a);
+    /* font */
+    font-family: Courier, monospace;
+    color: #FFECD1;
+}
+
+/* smooth scrolling when clicking nav links */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* =========================================================
+   MAIN SITE WRAPPER - IT HOLDS EVERYTHINGGGG
+========================================================= */
+
+.site {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    /* glassy panel feel */
+    background: rgba(255, 255, 255, 0.03);
+
+    border: 2px solid rgba(255, 125, 0, 0.3);
+    border-radius: 16px;
+}
+
+
+/* =========================================================
+   A NICE STAYS RIGHT ON TOP HEADER, JUST HOW WE LIKE IT
+========================================================= */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #001524;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 999;
+    border-bottom: 2px solid #FF7D00;
+}
+
+/* my wonderful name */
+.site-name {
+    font-size: 32px;
+    font-weight: bold;
+    color: #FF7D00;
+}
+
+
+/* =========================================================
+   NAVIGATION (site navigation, this is in the header.)
+========================================================= */
+
+.site-navigation a {
+    color: #FFECD1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+
+    transition: 0.2s ease;
+}
+
+/* hover effect = links glow orange */
+.site-navigation a:hover {
+    color: #FF7D00;
+}
+
+
+/* =========================================================
+   MUSIC BUTTONS
+========================================================= */
+
+.music-controls {
+    margin-top: 10px;
+}
+
+.music-btn {
+    background-color: #001524;
+    border: 1px solid #FF7D00;
+    color: #FFECD1;
+
+    padding: 6px 10px;
+    border-radius: 8px;
+
+    cursor: pointer;
+    margin: 2px;
+}
+
+.music-btn:hover {
+    background-color: #FF7D00;
+    color: #001524;
+}
+
+
+/* =========================================================
+   ABOUT PAGE (PROFILE SECTION)
+========================================================= */
+
+.about-me-page {
+    margin-top: 140px; /* pushes content below fixed header */
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+
+    padding: 20px;
+
+    background-color: #15616D;
+    border-radius: 16px;
+}
+
+
+/* left profile card */
+.profile-card {
+    background-color: #001524;
+    padding: 20px;
+
+    border-radius: 16px;
+    border: 2px solid #FF7D00;
+}
+
+/* profile image styling */
+.profile-card img {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid #FF7D00;
+}
+
+
+/* =========================================================
+   CERTIFICATION GRID (right side boxes)
+========================================================= */
+
+.certifications-achievements-card {
+    background-color: #001524;
+    padding: 20px;
+
+    border-radius: 16px;
+    border: 2px solid #FF7D00;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+/* each small achievement box */
+.cert-card {
+    background-color: #FFECD1;
+    color: #001524;
+
+    padding: 10px;
+    border-radius: 10px;
+
+    border: 2px solid #FF7D00;
+    text-align: center;
+}
+
+
+/* fun decorative cards */
+.weird-card {
+    background-color: #FF7D00;
+    color: #001524;
+
+    padding: 10px;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   BIO SECTION (bottom about section)
+========================================================= */
+
+.about-bio-card {
+    grid-column: span 2;
+
+    margin-top: 20px;
+
+    background-color: #001524;
+    padding: 20px;
+
+    border-radius: 16px;
+    border: 2px solid #FF7D00;
+}
+
+
+/* =========================================================
+   WORK EXPERIENCE SECTION
+========================================================= */
+
+.work-experience-page {
+    margin-top: 30px;
+
+    background-color: #001524;
+    padding: 20px;
+
+    border-radius: 16px;
+    border: 2px solid #15616D;
+}
+
+.experience-card {
+    background-color: #FFECD1;
+    color: #001524;
+
+    padding: 20px;
+    border-radius: 12px;
+
+    margin-bottom: 10px;
+}
+
+
+/* layout: jobs + skills side by side */
+.experience-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+
+/* skills box (right side) */
+.toolbox-card {
+    background-color: #15616D;
+    padding: 20px;
+
+    border-radius: 12px;
+}
+
+
+/* skill bars */
+.skill-bar {
+    width: 100%;
+    height: 12px;
+    background-color: #FFECD1;
+
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    background-color: #FF7D00;
+}
+
+
+/* different skill levels */
+.skill-5 { width: 100%; }
+.skill-4 { width: 80%; }
+.skill-3 { width: 60%; }
+/*why would i need lower?? im just that good*/
+
+/* =========================================================
+   EDUCATION SECTION
+========================================================= */
+
+.academics-page {
+    margin-top: 30px;
+
+    background-color: #FFECD1;
+    color: #001524;
+
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.academics-card {
+    background-color: #001524;
+    color: #FFECD1;
+
+    padding: 20px;
+    margin-bottom: 10px;
+
+    border-radius: 12px;
+}
+
+
+/* =========================================================
+   CLUBS / EXTRACURRICULARS
+========================================================= */
+
+.extracurriculars-page {
+    margin-top: 30px;
+
+    background-color: #FF7D00;
+    color: #001524;
+
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.extracurriculars-card {
+    background-color: #FFECD1;
+    padding: 15px;
+
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   PROJECTS SECTION
+========================================================= */
+
+.projects-page {
+    margin-top: 30px;
+
+    background-color: #001524;
+    color: #FFECD1;
+
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.projects-card {
+    background-color: #15616D;
+
+    padding: 20px;
+    border-radius: 12px;
+}
+
+
+/* =========================================================
+   FOOTER (CONTACTS)
+========================================================= */
+
+.site-footer {
+    margin-top: 30px;
+
+    background-color: #001524;
+    color: #FFECD1;
+
+    padding: 20px;
+    border-radius: 16px;
+
+    text-align: center;
+}
